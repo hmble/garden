@@ -1,12 +1,52 @@
+const colors = require("tailwindcss/colors");
+const typography = require("@tailwindcss/typography");
 module.exports = {
   mode: "jit",
   purge: ["./content/**/*.md", "./content/**/*.html", "./layouts/**/*.html"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        mono: ['"Fira Mono"', "monospace"],
+      },
+      colors: {
+        darkgray: "#151515",
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            "*,*::before,*::after": {
+              color: colors.black,
+            },
+            color: colors.black,
+            a: {
+              color: colors.purple["500"],
+              textDecoration: "none",
+              backgroundColor: "red.400",
+            },
+          },
+        },
+        dark: {
+          css: {
+            "*,*::before,*::after": {
+              color: colors.white,
+            },
+            color: colors.white,
+            a: {
+              color: colors.purple["500"],
+              textDecoration: "none",
+            },
+          },
+        },
+      },
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    typography,
+    // ...
+  ],
 };

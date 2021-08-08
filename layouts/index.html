@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World</title>
-    <link rel="stylesheet" href="/main.css" />
-  </head>
-  <body>
-    <h1 class="p-4 text-red-400 text-[100px] font-bold">Samyak</h1>
-  </body>
-</html>
+{{ define "main" }}
+<section class=" mt-5 prose h-full dark:prose-dark my-auto">{{.Content}}</section>
+{{ end }}
