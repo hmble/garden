@@ -1,3 +1,77 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* inter-regular - latin */
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(""), url("/fonts/Inter-Regular.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/fonts/Inter-Regular.woff")
+        format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local(""), url("/fonts/Inter-Italic.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/fonts/Inter-Italic.woff")
+        format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local(""), url("/fonts/Inter-SemiBold.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/fonts/Inter-SemiBold.woff")
+        format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(""), url("/fonts/Inter-Bold.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/fonts/Inter-Bold.woff")
+        format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local(""), url("/fonts/Inter-Medium.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/fonts/Inter-Medium.woff")
+        format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* fira-mono-regular - latin */
+  @font-face {
+    font-family: "Fira Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+      url("/fonts/fira-mono-v9-latin-regular.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("/fonts/fira-mono-v9-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  html {
+    font-family: "Inter", sans-serif;
+  }
+
+  pre {
+    font-family: "Fira Mono", monospace;
+  }
+  code {
+    font-family: "Fira Mono", monospace;
+  }
+}
