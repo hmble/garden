@@ -44,10 +44,6 @@
   {{ end }}
   <main id="content" class=" mx-auto container lg:w-7/12 p-2 mt-4 ">
     {{- block "main" . }}{{- end -}}
-    {{ if (ne .Page.Kind "home") }}
-
-    <div class="mt-4 border-dashed border-b-2 border-black dark:border-white"></div>
-    {{ end }}
   </main>
   {{ if (ne .Page.Kind "404") }}
   {{- partial "footer.html" . -}}

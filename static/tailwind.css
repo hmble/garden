@@ -75,3 +75,7 @@
     font-family: "Fira Mono", monospace;
   }
 }
+
+.footer-border {
+  @apply border-dashed border-t-2 border-black dark:border-white;
+}
