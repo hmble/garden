@@ -1,8 +1,9 @@
 {{ define "main" }}
-<div class="prose dark:prose-dark container mx-auto px-4">
-	<h2>{{.Title}}</h2>
-	<div>
+<article class=" mx-auto px-4">
+	<h1 class="my-8 font-extrabold text-4xl">{{.Title}}</h1>
+	<span class="block text-sm text-gray-500 my-4">{{.Date.Format "02 Jan 2006"}}</span>
+	<div class="prose dark:prose-dark">
 		{{ .Content }}
 	</div>
-</div>
+</article>
 {{ end }}
