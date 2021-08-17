@@ -2,3 +2,5 @@ baseURL = "https://samyakb.com"
 languageCode = "en-us"
 title = "Samyak Bakliwal"
 enableEmoji = true
+
+pygmentsStyle= "native"
