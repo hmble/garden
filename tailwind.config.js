@@ -30,7 +30,7 @@ module.exports = {
         dark: {
           css: {
             "*,*::before,*::after": {
-              color: colors.white,
+              color: "#F4F6FF",
             },
             color: colors.white,
             a: {
