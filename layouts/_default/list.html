@@ -3,5 +3,14 @@
 
 	<h1>{{ .Title }}</h1>
 
+	{{ range .Pages }}
+	<li class="list-none">
+		<a href="{{.Permalink}}" class="cursor-pointer flex flex-col my-4 p-2 rounded-lg
+			hover:bg-purple-200 dark:hover:bg-[#262626]">
+			<span class="text-purple-500">{{.Title}}</span>
+			<span class=" text-xs text-gray-500">{{.Date.Format "02 Jan 2006"}}</span>
+		</a>
+	</li>
+	{{ end }}
 </div>
 {{ end }}

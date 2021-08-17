@@ -1160,6 +1160,11 @@ code {
   margin-bottom: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -1224,10 +1229,6 @@ code {
   height: 0.75rem;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .min-h-full {
   min-height: 100%;
 }
@@ -1240,12 +1241,16 @@ code {
   width: 0.75rem;
 }
 
-.w-3\/5 {
-  width: 60%;
-}
-
 .transform {
   transform: var(--tw-transform);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .flex-row {
@@ -1278,6 +1283,10 @@ code {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-md {
@@ -1341,14 +1350,19 @@ code {
   letter-spacing: 0.025em;
 }
 
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgba(75, 85, 99, var(--tw-text-opacity));
-}
-
 .text-purple-500 {
   --tw-text-opacity: 1;
   color: rgba(139, 92, 246, var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgba(75, 85, 99, var(--tw-text-opacity));
 }
 
 .text-black {
@@ -1388,6 +1402,11 @@ code {
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
 }
 
+.hover\:bg-purple-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(221, 214, 254, var(--tw-bg-opacity));
+}
+
 .hover\:bg-black:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
@@ -1408,9 +1427,9 @@ code {
 }
 
 .dark .dark\:prose-dark *,.dark .dark\:prose-dark *::before,.dark .dark\:prose-dark *::after {
-  color: #fff;
-  color: #fff;
-  color: #fff;
+  color: #F4F6FF;
+  color: #F4F6FF;
+  color: #F4F6FF;
 }
 
 .dark .dark\:prose-dark {
@@ -1450,6 +1469,11 @@ code {
   color: rgba(209, 213, 219, var(--tw-text-opacity));
 }
 
+.dark .dark\:hover\:bg-\[\#262626\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(38, 38, 38, var(--tw-bg-opacity));
+}
+
 .dark .dark\:hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -1468,17 +1492,5 @@ code {
 
   .lg\:w-2\/3 {
     width: 66.666667%;
-  }
-
-  .lg\:w-\[70\%\] {
-    width: 70%;
-  }
-
-  .lg\:w-3\/5 {
-    width: 60%;
-  }
-
-  .lg\:w-5\/6 {
-    width: 83.333333%;
   }
 }
