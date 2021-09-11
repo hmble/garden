@@ -3,4 +3,5 @@ languageCode = "en-us"
 title = "Samyak Bakliwal"
 enableEmoji = true
 
-pygmentsStyle= "native"
+# pygmentsStyle= "native"
+pygmentsUseClasses = true

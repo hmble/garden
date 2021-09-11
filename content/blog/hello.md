@@ -7,7 +7,7 @@ I made this blog this blog with hugo and tailwindcss JIT. You can watch take a l
 
 All we have to do is add `jit` mode to our tailwind config file and run a command
 
-```js
+```js {hl_lines=[2,3]}
 module.exports = {
 	mode: "jit",
 	...
