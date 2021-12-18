@@ -1,8 +1,7 @@
 const colors = require("tailwindcss/colors");
 const typography = require("@tailwindcss/typography");
 module.exports = {
-  mode: "jit",
-  purge: ["./content/**/*.md", "./content/**/*.html", "./layouts/**/*.html"],
+  content: ["./content/**/*.md", "./content/**/*.html", "./layouts/**/*.html"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {

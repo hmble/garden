@@ -18,11 +18,10 @@
   },
   "homepage": "https://github.com/hmble/garden#readme",
   "devDependencies": {
-    "autoprefixer": "^10.3.1",
-    "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.7"
+    "@tailwindcss/typography": "^0.5.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7"
   },
-  "dependencies": {
-    "@tailwindcss/typography": "^0.4.1"
-  }
+  "dependencies": {}
 }
