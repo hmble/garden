@@ -1,9 +1,21 @@
 {{ define "main" }}
-<article class=" mx-auto px-4">
-	<h1 class="my-8 font-extrabold text-4xl">{{.Title}}</h1>
-	<span class="block text-sm text-gray-500 my-4">{{.Date.Format "02 Jan 2006"}}</span>
-	<div class="prose dark:prose-dark">
-		{{ .Content }}
-	</div>
+<article
+  class="
+    prose prose-neutral
+    dark:prose-invert
+    text-black
+    dark:text-white
+    mx-auto
+    px-4
+    prose-headings:font-normal
+    prose-code:text-purple-500
+    prose-a:text-purple-500
+  "
+>
+  <h1 class="mt-8">{{.Title}}</h1>
+  <span class="block text-sm text-gray-500 my-4"
+    >{{.Date.Format "02 Jan 2006"}}</span
+  >
+  <div>{{ .Content }}</div>
 </article>
 {{ end }}
