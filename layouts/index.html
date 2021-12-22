@@ -1,8 +1,20 @@
 {{ define "main" }}
-<section class=" mt-5 prose h-full dark:prose-dark my-auto">{{.Content}}</section>
+<section class="mt-5 prose prose-neutral h-full dark:prose-invert my-auto">
+  {{.Content}}
+</section>
 
-<a class="inline-block rounded-md mt-4 p-2 bg-purple-200 text-purple-600 dark:bg-opacity-20 dark:bg-purple-900 font-medium"
-	href="/blog">Browse
-	All
-	Articles</a>
+<a
+  class="
+    inline-block
+    rounded-md
+    mt-4
+    p-2
+    bg-purple-200
+    text-purple-600
+    dark:bg-opacity-20 dark:bg-purple-900
+    font-medium
+  "
+  href="/blog"
+  >Browse All Articles</a
+>
 {{ end }}
