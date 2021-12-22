@@ -1,29 +1,34 @@
+/*!
+  Syntax theme values reference
+  Light Theme : https://github.com/highlightjs/highlight.js/blob/main/src/styles/github.css
+  Dark Theme : https://github.com/highlightjs/highlight.js/blob/main/src/styles/github-dark.css
+*/
 :root {
-  --foreground: #695d69;
-  --background: #f7f3f7;
-  --err: #ca402b;
-  --keyword: #7b59c0;
-  --name: #516aec;
-  --nameDecorator: #a65926;
+  --foreground: #24292e;
+  --background: #ffffff;
+  --err: #6f42c1;
+  --keyword: #d73a49;
+  --name: #22863a;
+  --nameDecorator: #d73a49;
   --literal: #918b3b;
-  --comment: #9e8f9e;
-  --specialStr: #cc33cc;
+  --comment: #6a737d;
+  --specialStr: #032f62;
   --specialLiteral: #159393;
-  --lineHighlight: #ab9bab94;
+  --lineHighlight: #fff8c5;
 }
 
 .dark {
-  --foreground: #d5c4a1;
-  --background: #1d2021;
-  --err: #fb4934;
-  --keyword: #d3869b;
-  --name: #83a598;
-  --nameDecorator: #fe8019;
+  --foreground: #c9d1d9;
+  --background: #0d1117;
+  --err: #d2a8ff;
+  --keyword: #ff7b72;
+  --name: #7ee787;
+  --nameDecorator: #ff7b72;
   --literal: #b8bb26;
-  --comment: #665c54;
-  --specialStr: #d65d0e;
+  --comment: #8b949e;
+  --specialStr: #a5d6ff;
   --specialLiteral: #8ec07c;
-  --lineHighlight: rgba(80, 73, 69, 0.4);
+  --lineHighlight: rgba(187, 128, 9, 0.15);
 }
 /* Background */
 .chroma {
@@ -60,11 +65,7 @@
   display: block;
   width: 100%;
   background-color: var(--lineHighlight);
-}
-.chroma .hl::before {
-  content: "";
-  background-color: red;
-  width: 4px;
+  box-shadow: inset 4px 0 0 rgba(187, 128, 9, 0.4);
 }
 /* LineNumbersTable */
 .chroma .lnt {
@@ -83,14 +84,10 @@
 .chroma .kn ,/* KeywordPseudo */
 .chroma .kp ,/* KeywordReserved */
 .chroma .kr /* KeywordType */ ,
-.chroma .nt /* NameTag */
-{
+.chroma .nt /* NameTag */ {
   color: var(--keyword);
 }
 
-.chroma .kt {
-  color: var(--err);
-}
 .chroma .n ,/* Name */
             /* NameAttribute */
 .chroma .na ,/* NameBuiltin */
@@ -110,82 +107,16 @@
 .chroma .vc ,/* NameVariableGlobal */
 .chroma .vg ,/* NameVariableMagic */
 .chroma .vm ,/* GenericHeading */
-.chroma .gh ,.chroma .bp {
+.chroma .kt ,
+.chroma .gh ,
+.chroma .bp ,/* NameVariableInstance */
+.chroma .vi ,/* GenericDeleted */
+.chroma .gd {
   color: var(--err);
 }
 /* NameConstant */
-.chroma .no {
-  color: var(--nameDecorator);
-}
-/* NameDecorator */
-.chroma .nd {
-  color: var(--nameDecorator);
-}
-/* NameVariableInstance */
-.chroma .vi {
-  color: var(--err);
-}
-/* Literal */
-.chroma .l {
-  color: var(--literal);
-}
-/* LiteralDate */
-.chroma .ld {
-  color: var(--literal);
-}
-/* LiteralString */
-.chroma .s {
-  color: var(--literal);
-}
-/* LiteralStringAffix */
-.chroma .sa {
-  color: var(--literal);
-}
-/* LiteralStringBacktick */
-.chroma .sb {
-  color: var(--literal);
-}
-/* LiteralStringChar */
-.chroma .sc {
-  color: var(--literal);
-}
-/* LiteralStringDelimiter */
-.chroma .dl {
-  color: var(--literal);
-}
-/* LiteralStringDoc */
-.chroma .sd {
-  color: var(--literal);
-}
-/* LiteralStringDouble */
-.chroma .s2 {
-  color: var(--literal);
-}
-/* LiteralStringEscape */
-.chroma .se {
-  color: var(--literal);
-}
-/* LiteralStringHeredoc */
-.chroma .sh {
-  color: var(--literal);
-}
-/* LiteralStringInterpol */
-.chroma .si {
-  color: var(--specialStr);
-}
-/* LiteralStringOther */
-.chroma .sx {
-  color: var(--literal);
-}
-/* LiteralStringRegex */
-.chroma .sr {
-  color: var(--specialLiteral);
-}
-/* LiteralStringSingle */
-.chroma .s1 {
-  color: var(--literal);
-}
-/* LiteralStringSymbol */
+.chroma .no ,/* NameDecorator */
+.chroma .nd ,/* LiteralStringSymbol */
 .chroma .ss ,/* LiteralNumber */
 .chroma .m ,/* LiteralNumberBin */
 .chroma .mb ,/* LiteralNumberFloat */
@@ -196,10 +127,46 @@
 .chroma .mo {
   color: var(--nameDecorator);
 }
+
+/* Literal */
+.chroma .l ,/* LiteralDate */
+.chroma .ld ,/* LiteralString */
+.chroma .s ,/* LiteralStringAffix */
+.chroma .sa ,/* LiteralStringBacktick */
+.chroma .sb ,/* LiteralStringChar */
+.chroma .sc ,/* LiteralStringDelimiter */
+.chroma .dl ,/* LiteralStringDoc */
+.chroma .sd ,/* LiteralStringDouble */
+.chroma .s2 ,/* LiteralStringEscape */
+.chroma .se ,/* LiteralStringHeredoc */
+.chroma .sh ,/* LiteralStringInterpol */
+/* LiteralStringOther */
+.chroma .sx ,/* LiteralStringSingle */
+.chroma .s1 ,/* GenericInserted */
+.chroma .gi ,/* CommentPreprocFile */
+.chroma .cpf {
+  color: var(--literal);
+}
+.chroma .si ,
+/* CommentPreproc */
+.chroma .cp {
+  color: var(--specialStr);
+}
+/* LiteralStringRegex */
+.chroma .sr {
+  color: var(--specialLiteral);
+}
 /* Operator */
 .chroma .o ,/* OperatorWord */
 .chroma .ow ,/* Punctuation */
-.chroma .p {
+.chroma .p ,/* Generic */
+.chroma .g ,/* GenericEmph */
+/* GenericError */
+.chroma .gr ,/* GenericOutput */
+.chroma .go ,/* GenericPrompt */
+.chroma .gp ,/* GenericStrong */
+/* GenericTraceback */
+.chroma .gt {
   color: var(--foreground);
 }
 /* Comment */
@@ -210,22 +177,6 @@
 .chroma .cs {
   color: var(--comment);
 }
-/* CommentPreproc */
-.chroma .cp {
-  color: var(--specialStr);
-}
-
-/* GenericDeleted */
-.chroma .gd {
-  color: var(--err);
-}
-
-/* GenericInserted */
-.chroma .gi ,/* CommentPreprocFile */
-.chroma .cpf {
-  color: var(--literal);
-}
-
 .chroma .ge {
   color: var(--foreground);
   font-style: italic;
@@ -238,16 +189,6 @@
 .chroma .gl {
   color: var(--foreground);
   text-decoration: underline;
-}
-/* Generic */
-.chroma .g ,/* GenericEmph */
-/* GenericError */
-.chroma .gr ,/* GenericOutput */
-.chroma .go ,/* GenericPrompt */
-.chroma .gp ,/* GenericStrong */
-/* GenericTraceback */
-.chroma .gt {
-  color: var(--foreground);
 }
 /* TextWhitespace */
 .chroma .w {
