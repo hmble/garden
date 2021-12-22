@@ -9,7 +9,7 @@ All we have to do is add `jit` mode to our tailwind config file and run a comman
 
 ```js {hl_lines=[2,3]}
 module.exports = {
-	mode: "jit",
+	mode: "jit", // comment
 	...
 }
 ```
