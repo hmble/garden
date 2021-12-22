@@ -30,3 +30,27 @@ func main() {
 	fmt.Println(os.Getenv("HOME"))
 }
 ```
+
+Lists
+
+- one
+- two
+- three
+  - four
+
+1. one
+   - two
+   - three
+2. three
+3. four
+4. five
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5

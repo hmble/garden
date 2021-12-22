@@ -23,7 +23,7 @@
   --comment: #665c54;
   --specialStr: #d65d0e;
   --specialLiteral: #8ec07c;
-  --lineHighlight: #504945;
+  --lineHighlight: rgba(80, 73, 69, 0.4);
 }
 /* Background */
 .chroma {
@@ -60,6 +60,11 @@
   display: block;
   width: 100%;
   background-color: var(--lineHighlight);
+}
+.chroma .hl::before {
+  content: "";
+  background-color: red;
+  width: 4px;
 }
 /* LineNumbersTable */
 .chroma .lnt {
