@@ -1,21 +1,13 @@
 {{ define "main" }}
 <div class="container mx-auto px-4">
-  <h1 class="text-2xl font-normal dark:text-white">{{ .Title }}</h1>
+  <h1 class="text-2xl font-semibold dark:text-white">{{ .Title }}</h1>
   {{ range .Pages }}
   <li class="list-none">
     <a
       href="{{.Permalink}}"
-      class="
-        cursor-pointer
-        flex flex-col
-        my-4
-        p-2
-        rounded-lg
-        hover:bg-neutral-200
-        dark:hover:bg-neutral-700/60
-      "
+      class="cursor-pointer flex flex-col my-4 p-2 rounded-lg hover:bg-neutral-200 dark:hover:bg-neutral-700/60"
     >
-      <span class="font-medium text-lg dark:text-white">{{.Title}}</span>
+      <span class="font-medium text-lg dark:text-white">{{.Title }}</span>
       <span class="text-xs text-neutral-500"
         >{{.Date.Format "02 Jan 2006"}}</span
       >

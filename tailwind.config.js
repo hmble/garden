@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
         mono: ['"Fira Mono"', "monospace"],
+        spacemono: ['"Space Mono"', "monospace"],
       },
       colors: {
         darkgray: "#151515",
